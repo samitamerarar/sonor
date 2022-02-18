@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/sonor/static/css/main.bb733bc8.chunk.css",
+    "main.js": "/sonor/static/js/main.ca6919fd.chunk.js",
+    "main.js.map": "/sonor/static/js/main.ca6919fd.chunk.js.map",
+    "runtime-main.js": "/sonor/static/js/runtime-main.b1dfdcb6.js",
+    "runtime-main.js.map": "/sonor/static/js/runtime-main.b1dfdcb6.js.map",
+    "static/css/2.b80adf08.chunk.css": "/sonor/static/css/2.b80adf08.chunk.css",
+    "static/js/2.955eb7fe.chunk.js": "/sonor/static/js/2.955eb7fe.chunk.js",
+    "static/js/2.955eb7fe.chunk.js.map": "/sonor/static/js/2.955eb7fe.chunk.js.map",
+    "static/js/3.84ce4ba5.chunk.js": "/sonor/static/js/3.84ce4ba5.chunk.js",
+    "static/js/3.84ce4ba5.chunk.js.map": "/sonor/static/js/3.84ce4ba5.chunk.js.map",
+    "index.html": "/sonor/index.html",
+    "static/css/2.b80adf08.chunk.css.map": "/sonor/static/css/2.b80adf08.chunk.css.map",
+    "static/css/main.bb733bc8.chunk.css.map": "/sonor/static/css/main.bb733bc8.chunk.css.map",
+    "static/js/2.955eb7fe.chunk.js.LICENSE.txt": "/sonor/static/js/2.955eb7fe.chunk.js.LICENSE.txt",
+    "static/media/home-video.b9ce4666.mp4": "/sonor/static/media/home-video.b9ce4666.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1dfdcb6.js",
+    "static/css/2.b80adf08.chunk.css",
+    "static/js/2.955eb7fe.chunk.js",
+    "static/css/main.bb733bc8.chunk.css",
+    "static/js/main.ca6919fd.chunk.js"
+  ]
+}
