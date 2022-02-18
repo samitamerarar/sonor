@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* TABLET-LANDSCAPE   */
+@media (max-width: 1200px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+/* TABLET-PORTRAIT */
+@media (max-width: 900px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+/* PHONE */
+@media (max-width: 600px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+
+body {
+  background-color: #b5fac7;
+}

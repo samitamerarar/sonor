@@ -1,0 +1,27 @@
+.navbar {
+    min-height: 66px;
+}
+
+.nav-link {
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    border-radius: 10px;
+    background-color: #575b69;
+    color: #c4ff23 !important;
+}
+
+@media (max-width: 768px) {
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+    .nav-link {
+        border-radius: 10px;
+        padding: 15px;
+        margin-top: 10px;
+    }
+    
+}
