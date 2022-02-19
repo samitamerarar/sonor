@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/sonor/static/css/main.517cd727.css",
-    "main.js": "/sonor/static/js/main.1d7f8567.js",
-    "static/js/787.9553dfb1.chunk.js": "/sonor/static/js/787.9553dfb1.chunk.js",
-    "static/media/home-video.mp4": "/sonor/static/media/home-video.b9ce466637136882d56c.mp4",
-    "index.html": "/sonor/index.html",
-    "main.517cd727.css.map": "/sonor/static/css/main.517cd727.css.map",
-    "main.1d7f8567.js.map": "/sonor/static/js/main.1d7f8567.js.map",
-    "787.9553dfb1.chunk.js.map": "/sonor/static/js/787.9553dfb1.chunk.js.map"
+    "main.css": "/static/css/main.517cd727.css",
+    "main.js": "/static/js/main.ce068fe8.js",
+    "static/js/787.9553dfb1.chunk.js": "/static/js/787.9553dfb1.chunk.js",
+    "static/media/home-video.mp4": "/static/media/home-video.b9ce466637136882d56c.mp4",
+    "index.html": "/index.html",
+    "main.517cd727.css.map": "/static/css/main.517cd727.css.map",
+    "main.ce068fe8.js.map": "/static/js/main.ce068fe8.js.map",
+    "787.9553dfb1.chunk.js.map": "/static/js/787.9553dfb1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.517cd727.css",
-    "static/js/main.1d7f8567.js"
+    "static/js/main.ce068fe8.js"
   ]
 }
