@@ -2,29 +2,29 @@
   "name": "sonor",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://samitamerarar.github.io/sonor",
+  "homepage": "http://samitamerarar.github.io/sonor",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.5.0",
+    "@testing-library/react": "^12.1.3",
+    "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.1.3",
     "react": "^17.0.1",
     "react-bootstrap": "^2.1.2",
     "react-dom": "^17.0.1",
     "react-icons": "^4.3.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "^5.0.0",
     "react-scroll": "^1.8.5",
     "styled-components": "^5.3.3",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
