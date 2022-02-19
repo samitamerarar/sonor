@@ -17,7 +17,7 @@ export const Home = () => {
   return (
     <Container fluid >
       <Row className="justify-content-md-center" style={{ backgroundColor: 'black', height: `calc(100vh - 66px)` }}>
-        <img src={Video} style={{ width: 'auto', height: `calc(100vh - 66px)` }} />
+        <img src={Video} style={{ width: 'auto', height: `calc(100vh - 66px)`, filter: `opacity(75%) blur(1px)` }} />
         <HeroContent>
           <HeroH1>Location Son'OR</HeroH1>
           <HeroP>Équipements de Sonorisation et Audiovisuel</HeroP>
