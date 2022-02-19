@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Container, Row, Col } from "react-bootstrap";
-import Video from '../../assets/home-video.gif'
+import Video from '../../assets/home-video2.gif'
 import { HomeButton } from './HomeButton'
 import { HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HomeElements'
 import * as Scroll from 'react-scroll';
@@ -22,7 +22,7 @@ export const Home = () => {
           <HeroH1>Location Son'OR</HeroH1>
           <HeroP>Équipements de Sonorisation et Audiovisuel</HeroP>
           <HeroBtnWrapper>
-            <Scroll.Link style={{ textDecoration: 'none' }} to="anchor" spy={true} smooth={true} duration={250} offset={66}>
+            <Scroll.Link style={{ textDecoration: 'none' }} to="anchor" spy={true} smooth={true} duration={250} offset={-80}>
               <HomeButton to='signup' onMouseEnter={onHover} onMouseLeave={onHover} >
                 Défiler{hover ? <ArrowForward /> : <ArrowRight />}
               </HomeButton>
@@ -42,6 +42,34 @@ export const Home = () => {
           </Col>
         </Row>
 
+        <Row className="mt-5 justify-content-md-center" >
+          <Col style={{ textAlign: 'center' }} lg="8">
+            <span style={{ fontSize: "2em", fontWeight: 200 }}>
+              Son'OR est une entreprise qui se spécialise dans la location en sonorisation et audiovisuel tout en offrant un service d'installation de désinstallation, à tout moment. Nos Spécialistes du son répondront à vos demandes et vous conseilleront lorsque nécessaire.
+            </span>.
+          </Col>
+        </Row>
+        <Row className="mt-5 justify-content-md-center" >
+          <Col style={{ textAlign: 'center' }} lg="8">
+            <span style={{ fontSize: "2em", fontWeight: 200 }}>
+              Son'OR est une entreprise qui se spécialise dans la location en sonorisation et audiovisuel tout en offrant un service d'installation de désinstallation, à tout moment. Nos Spécialistes du son répondront à vos demandes et vous conseilleront lorsque nécessaire.
+            </span>.
+          </Col>
+        </Row>
+        <Row className="mt-5 justify-content-md-center" >
+          <Col style={{ textAlign: 'center' }} lg="8">
+            <span style={{ fontSize: "2em", fontWeight: 200 }}>
+              Son'OR est une entreprise qui se spécialise dans la location en sonorisation et audiovisuel tout en offrant un service d'installation de désinstallation, à tout moment. Nos Spécialistes du son répondront à vos demandes et vous conseilleront lorsque nécessaire.
+            </span>.
+          </Col>
+        </Row>
+        <Row className="mt-5 justify-content-md-center" >
+          <Col style={{ textAlign: 'center' }} lg="8">
+            <span style={{ fontSize: "2em", fontWeight: 200 }}>
+              Son'OR est une entreprise qui se spécialise dans la location en sonorisation et audiovisuel tout en offrant un service d'installation de désinstallation, à tout moment. Nos Spécialistes du son répondront à vos demandes et vous conseilleront lorsque nécessaire.
+            </span>.
+          </Col>
+        </Row>
         <Row className="mt-5 justify-content-md-center" >
           <Col style={{ textAlign: 'center' }} lg="8">
             <span style={{ fontSize: "2em", fontWeight: 200 }}>
