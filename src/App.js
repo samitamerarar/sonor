@@ -1,7 +1,7 @@
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from "./components/NavBar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./components/Pages/Home";
 import { Services } from "./components/Pages/Services";
 import { Realisations } from "./components/Pages/Realisations";
@@ -14,14 +14,14 @@ function App() {
     <>
       <Router>
         <NavBar />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/covid19" component={Covid19} />
-          <Route path="/services" component={Services} />
-          <Route path="/realisations" component={Realisations} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/commentaires" component={Feedback} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/covid19" element={<Covid19 />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/realisations" element={<Realisations />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/commentaires" element={<Feedback />} />
+        </Routes>
       </Router>
     </>
   );
