@@ -22,7 +22,7 @@ export const Home = () => {
           <HeroH1>Location Son'OR</HeroH1>
           <HeroP>Équipements de Sonorisation et Audiovisuel</HeroP>
           <HeroBtnWrapper>
-            <Scroll.Link style={{ textDecoration: 'none' }} to="anchor" spy={true} smooth={true} duration={250}>
+            <Scroll.Link style={{ textDecoration: 'none' }} to="anchor" spy={true} smooth={true} duration={250} offset={66}>
               <HomeButton to='signup' onMouseEnter={onHover} onMouseLeave={onHover} >
                 Défiler{hover ? <ArrowForward /> : <ArrowRight />}
               </HomeButton>
