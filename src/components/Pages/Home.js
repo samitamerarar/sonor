@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Container, Row, Col } from "react-bootstrap";
-import Video from '../../assets/home-video.mp4'
+import Video from '../../assets/home-video.gif'
 import { HomeButton } from './HomeButton'
 import { HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HomeElements'
 import * as Scroll from 'react-scroll';
@@ -13,10 +13,11 @@ export const Home = () => {
     setHover(!hover)
   }
 
+  // height: `calc(100vh - 67.5px - calc(100vh - 100%))`
   return (
     <Container fluid >
-      <Row className="justify-content-md-center" style={{ backgroundColor: 'black' }}>
-        <video style={{ height: `calc(100vh - 67.5px)` }} autoPlay loop muted src={Video} type='video/mp4' />
+      <Row className="justify-content-md-center" style={{ backgroundColor: 'black', height: `calc(100vh - 66px)` }}>
+        {/* <img src={Video} style={{ width: 'auto', height: `100%)` }} /> */}
         <HeroContent>
           <HeroH1>Location Son'OR</HeroH1>
           <HeroP>Équipements de Sonorisation et Audiovisuel</HeroP>
