@@ -44,12 +44,14 @@ export const Services = () => {
 
     /* https://www.rapidtables.com/web/html/mailto.html */
     onSubmit: (e) => {
+      const datesSelected = datesValue.size > 0 ? datesValue : '';
       window.open(`mailto:info@locationsonor.com?subject=Son'OR%20-%20R%C3%A9servation%20pour%20${encodeURIComponent(data.name)}
-    &body=${encodeURIComponent(data.message + "\n\nDates sélectionnées: " + datesValue + "\nNuméro de téléphone entré: " + data.phone ? data.phone : '')}`
+      &body=${encodeURIComponent(data.message + "\n\nDates sélectionnées: " + datesSelected + "\nNuméro de téléphone entré: " + data.phone)}`
         , '_self')
     },
     initialValues: {
       message: 'Bonjour, je voudrais recevoir un appel de confirmation pour la demande de réservation selon la ou les dates sélectionnées.\n\nJe voudrais le matériel suivant:\n',
+      phone: '',
     },
   })
 
