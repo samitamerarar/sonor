@@ -24,7 +24,8 @@
   }
 }
 
-
-body {
-  background-color: #b5fac7;
+#topimagerow{
+  --bs-gutter-x: 0px;
+  width: calc(100vw);
+  padding: 0px;
 }

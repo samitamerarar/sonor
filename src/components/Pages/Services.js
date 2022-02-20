@@ -1,15 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
+import { useForm } from "./useForm";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import Image5 from '../../assets/5.jpg'
+import { ScrollButton } from "./ScrollButton";
+
 
 export const Services = () => {
+  const {
+    handleSubmit, // handles form submission
+    handleChange, // handles input changes
+    data,
+    errors,
+  } = useForm({
+    validations: {
+      name: {
+        pattern: {
+          // value: '^[a-zA-Z]+$',
+          message:
+            "La valeur entrée n'est pas autorisée",
+          required: true,
+        },
+      },
+      phone: {
+        pattern: {
+          value: '^(?=.*[0-9])[- +#()0-9]+$',
+          message:
+            "Veuillez entrer un numéro de téléphone valide!",
+          required: false,
+        },
+      },
+      message: {
+        pattern: {
+          // value: '^[a-zA-Z]+$',
+          message:
+            "La valeur entrée n'est pas autorisée",
+          required: false,
+        },
+      },
+    },
+    onSubmit: (e) => { window.open(`mailto:info@locationsonor.com?subject=Son'OR%20-%20R%C3%A9servation%20pour%20${encodeURIComponent(data.name)}&body=${encodeURIComponent(data.message)}`, '_self') },
+    initialValues: {
+      message: 'Bonjour, je voudrais recevoir un appel de confirmation pour la demande de réservation selon la ou les dates sélectionnées.\n\nJe voudrais le matériel suivant:\n',
+    },
+  })
+
   return (
     <>
-      <Row style={{ width: `calc(100vw + 5px)` }}>
-        <Image style={{ height: "500px", width: '100%', objectFit: 'cover' }} src={Image5}></Image>
+      <Row id="topimagerow" style={{ postion: "relative" }}>
+        <Image style={{ height: "400px", width: '100%', objectFit: 'cover' }} src={Image5} />
+        <ScrollButton />
       </Row>
 
-      <Container style={{ backgroundColor: 'white', marginTop: '35px' }}>
+      <Container id="container" style={{ backgroundColor: 'white', marginTop: '50px' }} className="mb-5">
         <Row className="mb-5" >
           <h3>NOS SERVICES</h3>
         </Row>
@@ -44,21 +86,45 @@ export const Services = () => {
 
               <p className="mb-5">Note: Tous les ensembles peuvent êtres modifiés pour y ajouter de l'éclairage et d'autres accessoires.</p>
 
-              <p className="mb-5">Obtenir une soumission</p>
+              {/* <p className="mb-5">Obtenir une soumission</p> */}
 
             </div>
-
-
           </Col>
-        </Row >
+        </Row>
+
         <Row className="mb-5">
           <Col md={12} >
-            <div style={{ fontSize: "1.4em", fontWeight: "350" }}>
-              <p>La qualité sonore exceptionnelle que vous obtiendrez sera grâce à nos équipements de marques reconnues tels que Electro‑Voice, Shure, Pioneer, Soundcraft, Beyerdynamic, etc.</p>
+            <p style={{ fontSize: "2em", fontWeight: "400" }} className="mb-4">RÉSERVER</p>
 
-              <p>Zones désservies: Montréal et tous les environs!</p>
-            </div>
+            <form onSubmit={handleSubmit} style={{ fontSize: "1.1em", fontWeight: "400" }}>
+              <Row>
+                <p><span style={{ color: 'red' }}>*</span> Nom: </p>
+                <p>
+                  <input value={data.name || ''} onChange={handleChange('name')} type="text" maxLength="40" size="35" required />
+                  {errors.name && <p className="error">{errors.name}</p>}
+                </p>
+              </Row>
+              <Row>
+                <p>Numéro de téléphone: </p>
+                <p>
+                  <input value={data.phone || ''} onChange={handleChange('phone')} type="text" maxLength="20" size="35" />
+                  {errors.phone && <p className="error">{errors.phone}</p>}
+                </p>
+              </Row>
+              <Row>
+                <p><span style={{ color: 'red' }}>*</span> Message: </p>
+                <p>
+                  <textarea value={data.message || ''} onChange={handleChange('message')} cols="75" rows="8" required />
+                  {errors.message && <p className="error">{errors.message}</p>}
+                </p>
+              </Row>
+              <input type="submit" value="Envoyer" />
+
+            </form>
+
           </Col>
+
+          {/* https://www.rapidtables.com/web/html/mailto.html */}
         </Row>
 
       </Container >

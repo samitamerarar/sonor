@@ -1,15 +1,17 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import Image5 from '../../assets/5.jpg'
+import { ScrollButton } from "./ScrollButton";
 
 export const Contact = () => {
   return (
     <>
-      <Row style={{ width: `calc(100vw + 5px)` }}>
-        <Image style={{ height: "500px", width: '100%', objectFit: 'cover' }} src={Image5}></Image>
+      <Row id="topimagerow" style={{ postion: "relative" }}>
+        <Image style={{ height: "400px", width: '100%', objectFit: 'cover' }} src={Image5} />
+        <ScrollButton />
       </Row>
 
-      <Container style={{ backgroundColor: 'white', marginTop: '35px' }} className="mb-5">
+      <Container id="container" style={{ backgroundColor: 'white', marginTop: '50px' }} className="mb-5">
         <Row className="mb-5">
           <h3>CONTACT</h3>
         </Row>

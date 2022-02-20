@@ -5,7 +5,7 @@ import { faFacebookF, faInstagram, faLinkedinIn, } from '@fortawesome/free-brand
 
 export const Footer = () => {
     return (
-        <div style={{ marginTop: "200px", paddingBottom: "80px", }}>
+        <div style={{ marginTop: "120px", paddingBottom: "40px", }}>
             <Container fluid style={{ backgroundColor: '#e6e6e6', boxShadow: "0 50vh 0 50vh #e6e6e6" }}>
                 <Row className="justify-content-md-center">
                     <Col className="mt-5" style={{ textAlign: 'center' }} md={12}>
