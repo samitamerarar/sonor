@@ -8,7 +8,7 @@ function NavBar() {
 
   return (
     <>
-      <Navbar bg="dark" variant={"dark"} expand="lg" expanded={expanded} sticky="top">
+      <Navbar variant={"dark"} expand="lg" expanded={expanded} sticky="top" style={{ backgroundColor: "#323438" }}>
 
         <Container style={{ fontSize: "17px" }}>
           <Navbar.Brand href="/"><span style={{ fontSize: "20px" }}>Location Son'OR</span></Navbar.Brand>

@@ -8,6 +8,7 @@ import { Realisations } from "./components/Pages/Realisations";
 import { Contact } from "./components/Pages/Contact";
 import { Feedback } from "./components/Pages/Feedback";
 import { Covid19 } from "./components/Pages/Covid19";
+import { Footer } from "./components/Pages/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/commentaires" element={<Feedback />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );
