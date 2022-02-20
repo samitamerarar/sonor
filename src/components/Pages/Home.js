@@ -63,7 +63,7 @@ export const Home = () => {
 
         <Row className="pt-5">
           <Col md={12} >
-            <div style={{ fontSize: "1.2em", fontWeight: "350" }}>
+            <div style={{ fontSize: "1.2em", fontWeight: "350", transform: `translateY(85px)` }}>
               <p>La qualité sonore exceptionnelle que vous obtiendrez sera grâce à nos équipements de marques reconnues tels que Electro‑Voice, Shure, Pioneer, Soundcraft, Beyerdynamic, etc.</p>
 
               <p>Zones désservies: Montréal et tous les environs!</p>

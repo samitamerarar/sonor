@@ -29,3 +29,8 @@
   width: calc(100vw);
   padding: 0px;
 }
+
+.rmdp-input {
+  all: initial;
+  box-shadow: 0 0 1px #000;
+}

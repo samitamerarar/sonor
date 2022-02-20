@@ -9,11 +9,13 @@ import { Contact } from "./components/Pages/Contact";
 import { Feedback } from "./components/Pages/Feedback";
 import { Covid19 } from "./components/Pages/Covid19";
 import { Footer } from "./components/Pages/Footer";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />

@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import DatePicker from "react-multi-date-picker";
 import { useForm } from "./useForm";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import Image5 from '../../assets/5.jpg'
 import { ScrollButton } from "./ScrollButton";
 
+const weekDays = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"]
+const months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]
 
 export const Services = () => {
   const {
@@ -38,11 +41,19 @@ export const Services = () => {
         },
       },
     },
-    onSubmit: (e) => { window.open(`mailto:info@locationsonor.com?subject=Son'OR%20-%20R%C3%A9servation%20pour%20${encodeURIComponent(data.name)}&body=${encodeURIComponent(data.message)}`, '_self') },
+
+    /* https://www.rapidtables.com/web/html/mailto.html */
+    onSubmit: (e) => {
+      window.open(`mailto:info@locationsonor.com?subject=Son'OR%20-%20R%C3%A9servation%20pour%20${encodeURIComponent(data.name)}
+    &body=${encodeURIComponent(data.message + "\n\nDates Sélectionnées: " + datesValue + "\nNuméro de téléphone entré: " + data.phone)}`
+        , '_self')
+    },
     initialValues: {
       message: 'Bonjour, je voudrais recevoir un appel de confirmation pour la demande de réservation selon la ou les dates sélectionnées.\n\nJe voudrais le matériel suivant:\n',
     },
   })
+
+  const [datesValue, setDatesValue] = useState([]);
 
   return (
     <>
@@ -98,33 +109,42 @@ export const Services = () => {
 
             <form onSubmit={handleSubmit} style={{ fontSize: "1.1em", fontWeight: "400" }}>
               <Row>
+                <p>Dates: </p>
+                <p>{/* https://www.npmjs.com/package/react-multi-date-picker */}
+                  <DatePicker value={datesValue} onChange={setDatesValue} minDate={new Date()} months={months} weekDays={weekDays} />
+                </p>
+              </Row>
+
+              <Row>
                 <p><span style={{ color: 'red' }}>*</span> Nom: </p>
                 <p>
-                  <input value={data.name || ''} onChange={handleChange('name')} type="text" maxLength="40" size="35" required />
+                  <input value={data.name || ''} onChange={handleChange('name')} type="text" maxLength="40" size="30" required />
                   {errors.name && <p className="error">{errors.name}</p>}
                 </p>
               </Row>
+
               <Row>
                 <p>Numéro de téléphone: </p>
                 <p>
-                  <input value={data.phone || ''} onChange={handleChange('phone')} type="text" maxLength="20" size="35" />
+                  <input value={data.phone || ''} onChange={handleChange('phone')} type="text" maxLength="20" size="30" />
                   {errors.phone && <p className="error">{errors.phone}</p>}
                 </p>
               </Row>
-              <Row>
+
+
+              <Row >
                 <p><span style={{ color: 'red' }}>*</span> Message: </p>
-                <p>
-                  <textarea value={data.message || ''} onChange={handleChange('message')} cols="75" rows="8" required />
+                <p >
+                  <textarea style={{ width: '100%' }} value={data.message || ''} onChange={handleChange('message')} rows="8" required />
                   {errors.message && <p className="error">{errors.message}</p>}
                 </p>
               </Row>
-              <input type="submit" value="Envoyer" />
+
+              <Button as="input" type="submit" value="Envoyer" />
 
             </form>
 
           </Col>
-
-          {/* https://www.rapidtables.com/web/html/mailto.html */}
         </Row>
 
       </Container >
