@@ -45,7 +45,7 @@ export const Services = () => {
     /* https://www.rapidtables.com/web/html/mailto.html */
     onSubmit: (e) => {
       window.open(`mailto:info@locationsonor.com?subject=Son'OR%20-%20R%C3%A9servation%20pour%20${encodeURIComponent(data.name)}
-    &body=${encodeURIComponent(data.message + "\n\nDates Sélectionnées: " + datesValue + "\nNuméro de téléphone entré: " + data.phone)}`
+    &body=${encodeURIComponent(data.message + "\n\nDates sélectionnées: " + datesValue + "\nNuméro de téléphone entré: " + data.phone ? data.phone : '')}`
         , '_self')
     },
     initialValues: {

@@ -11,7 +11,7 @@ export const ScrollButton = () => {
     }
     return (
         <HeroBtnWrapper style={{ marginTop: 'auto', transform: `translateY(-65px)`, height: '0px' }}>
-            <Scroll.Link style={{ textDecoration: 'none' }} to="container" spy={true} smooth={true} duration={250} offset={-80}>
+            <Scroll.Link style={{ textDecoration: 'none' }} to="container" spy={true} smooth={true} duration={250} offset={-20}>
                 <HomeButton onMouseEnter={onHover} onMouseLeave={onHover} >
                     {hover ? <ArrowDownward /> : <ArrowDown />}
                 </HomeButton>

@@ -21,7 +21,7 @@ export const Home = () => {
           <HeroH1>Location Son'OR</HeroH1>
           <HeroP>Équipements de Sonorisation et Audiovisuel</HeroP>
           <HeroBtnWrapper>
-            <Scroll.Link style={{ textDecoration: 'none' }} to="anchor" spy={true} smooth={true} duration={250} offset={-80}>
+            <Scroll.Link style={{ textDecoration: 'none' }} to="anchor" spy={true} smooth={true} duration={250} offset={-20}>
               <HomeButton onMouseEnter={onHover} onMouseLeave={onHover} >
                 {hover ? <ArrowDownward /> : <ArrowDown />}
               </HomeButton>
@@ -49,7 +49,7 @@ export const Home = () => {
           </Col>
         </Row>
 
-        <Row className="mt-5 mb-5 justify-content-md-center" >
+        <Row className="pt-5 mt-5 mb-5 justify-content-md-center" >
           <Col style={{ textAlign: 'center' }} lg="8">
             <HeroBtnWrapper>
               <Link to='/services' style={{ textDecoration: 'none' }}>
@@ -63,7 +63,7 @@ export const Home = () => {
 
         <Row className="pt-5">
           <Col md={12} >
-            <div style={{ fontSize: "1.2em", fontWeight: "350", transform: `translateY(85px)` }}>
+            <div style={{ fontSize: "1.2em", fontWeight: "350", transform: `translateY(40px)` }}>
               <p>La qualité sonore exceptionnelle que vous obtiendrez sera grâce à nos équipements de marques reconnues tels que Electro‑Voice, Shure, Pioneer, Soundcraft, Beyerdynamic, etc.</p>
 
               <p>Zones désservies: Montréal et tous les environs!</p>
