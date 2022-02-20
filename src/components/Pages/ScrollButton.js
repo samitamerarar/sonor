@@ -10,7 +10,7 @@ export const ScrollButton = () => {
         setHover(!hover)
     }
     return (
-        <HeroBtnWrapper style={{ position: 'absolute', top: "425px" }}>
+        <HeroBtnWrapper style={{ marginTop: 'auto', transform: `translateY(-65px)`, height: '0px' }}>
             <Scroll.Link style={{ textDecoration: 'none' }} to="container" spy={true} smooth={true} duration={250} offset={-80}>
                 <HomeButton onMouseEnter={onHover} onMouseLeave={onHover} >
                     {hover ? <ArrowDownward /> : <ArrowDown />}

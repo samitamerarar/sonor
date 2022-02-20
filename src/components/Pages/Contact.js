@@ -6,7 +6,7 @@ import { ScrollButton } from "./ScrollButton";
 export const Contact = () => {
   return (
     <>
-      <Row id="topimagerow" style={{ postion: "relative" }}>
+      <Row id="topimagerow" >
         <Image style={{ height: "400px", width: '100%', objectFit: 'cover' }} src={Image5} />
         <ScrollButton />
       </Row>

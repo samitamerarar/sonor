@@ -2,16 +2,23 @@ import React, { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
+import Logo from '../assets/logo.jpg'
 
 function NavBar() {
   const [expanded, setExpanded] = useState(false);
 
   return (
     <>
-      <Navbar variant={"dark"} expand="lg" expanded={expanded} sticky="top" style={{ backgroundColor: "#323438" }}>
+      <Navbar variant={"dark"} expand="lg" expanded={expanded} fixed style={{ backgroundColor: "#323438" }}>
 
         <Container style={{ fontSize: "17px" }}>
-          <Navbar.Brand href="/"><span style={{ fontSize: "20px" }}>Location Son'OR</span></Navbar.Brand>
+          <Navbar.Brand href="/"><img
+            alt=""
+            src={Logo}
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+          />{' '}<span style={{ fontSize: "20px" }}>Location Son'OR</span></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" onClick={() => setExpanded(expanded ? false : "expanded")} />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="me-auto">
