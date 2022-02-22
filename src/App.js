@@ -9,6 +9,7 @@ import { Contact } from "./components/Pages/Contact";
 import { Feedback } from "./components/Pages/Feedback";
 import { Covid19 } from "./components/Pages/Covid19";
 import { Footer } from "./components/Pages/Footer";
+import { NotFound } from "./components/Pages/NotFound";
 import ScrollToTop from "./ScrollToTop";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/realisations" element={<Realisations />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/commentaires" element={<Feedback />} />
+          <Route element={<NotFound />} />
         </Routes>
         <Footer />
       </Router>
