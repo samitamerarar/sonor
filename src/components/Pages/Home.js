@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Container, Row, Col } from "react-bootstrap";
-import Video from '../../assets/home-video2.gif'
+// import Video from '../../assets/home-video2.gif'
+import Video from '../../assets/home.mp4'
 import { HomeButton, LinkButton } from '../StyledComponents/HomeButton'
 import { HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight, ArrowDownward, ArrowDown } from '../StyledComponents/HomeElements'
 import * as Scroll from 'react-scroll';
@@ -14,14 +15,15 @@ export const Home = () => {
   }
 
   return (
-    <Container fluid className="mb-5">
-      <Row className="justify-content-md-center" style={{ backgroundColor: 'black', height: `calc(100vh - 66px)` }}>
-        <img src={Video} style={{ width: 'auto', height: `calc(100vh - 66px)`, filter: `opacity(75%) blur(1px)` }} />
+    <Container fluid className="mb-5 p-0">
+      <Row className="justify-content-md-center" style={{ backgroundColor: 'black', height: `calc(100vh)` }}>
+        {/* <img src={Video} style={{ width: 'auto', height: `calc(100vh - 66px)`, filter: `opacity(75%) blur(1px)` }} /> */}
+        <video style={{ objectFit: 'cover', height: '100%' }} autoPlay loop muted src={Video} type='video/mp4' />
         <HeroContent>
           <HeroH1>Location Son'OR</HeroH1>
           <HeroP>Équipements de Sonorisation et Audiovisuel</HeroP>
           <HeroBtnWrapper>
-            <Scroll.Link style={{ textDecoration: 'none' }} to="anchor" spy={true} smooth={true} duration={250} offset={-20}>
+            <Scroll.Link style={{ textDecoration: 'none' }} to="anchor" spy={true} smooth={true} duration={250} offset={-101}>
               <HomeButton onMouseEnter={onHover} onMouseLeave={onHover} >
                 {hover ? <ArrowDownward /> : <ArrowDown />}
               </HomeButton>

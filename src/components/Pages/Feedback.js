@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import Image5 from '../../assets/5.jpg'
+import Image5 from '../../assets/pexels-francesco-ungaro-6530797.jpg'
 import { ScrollButton } from "./ScrollButton";
 
 export const Feedback = () => {

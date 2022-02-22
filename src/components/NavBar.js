@@ -9,7 +9,7 @@ function NavBar() {
 
   return (
     <>
-      <Navbar variant={"dark"} expand="lg" expanded={expanded} fixed style={{ backgroundColor: "#323438" }}>
+      <Navbar variant={"dark"} expand="lg" expanded={expanded} fixed style={{ backgroundColor: "#323438" }} fixed="top">
 
         <Container style={{ fontSize: "17px" }}>
           <Navbar.Brand href="/"><img

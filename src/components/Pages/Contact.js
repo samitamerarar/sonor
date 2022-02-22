@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import Image5 from '../../assets/5.jpg'
+import Image5 from '../../assets/pexels-francesco-ungaro-6530797.jpg'
 import { ScrollButton } from "./ScrollButton";
 
 export const Contact = () => {
@@ -21,11 +21,11 @@ export const Contact = () => {
               <p> <span style={{ fontWeight: "400" }}>Lieu :</span> Montréal, Laval et les environs </p>
 
               <p><span style={{ fontWeight: "400" }}>Téléphone :</span><br />
-                Montréal: 514 581-5460<br />
-                Laval et les environs: 438 880-9136<br />
+                Montréal: (514) 581-5460<br />
+                Laval et les environs: (514) 581-5460<br />
               </p>
 
-              <p><span style={{ fontWeight: "400" }}>Courriel :</span> info@locationsonor.com</p><br />
+              <p><span style={{ fontWeight: "400" }}>Courriel :</span> <a href="mailto:locationsonore@gmail.com">locationsonore@gmail.com</a></p><br />
             </div>
 
             <p style={{ fontSize: "2em", fontWeight: "400" }}>RÉSERVATIONS</p>

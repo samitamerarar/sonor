@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import DatePicker from "react-multi-date-picker";
 import { useForm } from "./useForm";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
-import Image5 from '../../assets/5.jpg'
+import Image5 from '../../assets/pexels-francesco-ungaro-6530797.jpg'
 import { ScrollButton } from "./ScrollButton";
 
 const weekDays = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"]
@@ -45,7 +45,7 @@ export const Services = () => {
     /* https://www.rapidtables.com/web/html/mailto.html */
     onSubmit: (e) => {
       const datesSelected = datesValue && datesValue.length > 0 ? datesValue : '';
-      window.open(`mailto:info@locationsonor.com?subject=Son'OR%20-%20R%C3%A9servation%20pour%20${encodeURIComponent(data.name)}
+      window.open(`mailto:locationsonor@gmail.com?subject=Son'OR%20-%20R%C3%A9servation%20pour%20${encodeURIComponent(data.name)}
       &body=${encodeURIComponent(data.message + "\n\nDates sélectionnées: " + datesSelected + "\nNuméro de téléphone entré: " + data.phone)}`
         , '_self')
     },
