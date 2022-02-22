@@ -13,6 +13,7 @@ import Video3 from '../../assets/3.mp4'
 import Video4 from '../../assets/4.mp4'
 import Video5 from '../../assets/5.mp4'
 import Video6 from '../../assets/6.mp4'
+import Video7 from '../../assets/7.mp4'
 import { ScrollButton } from "./ScrollButton";
 
 export const Realisations = () => {
@@ -73,6 +74,9 @@ export const Realisations = () => {
           <CardGroup >
             <Card className="m-3">
               <video style={{ objectFit: "fill", height: "100%" }} src={Video6} controls muted type="video/mp4" />
+            </Card>
+            <Card className="m-3">
+              <video style={{ objectFit: "fill", height: "100%" }} src={Video7} controls muted type="video/mp4" />
             </Card>
             <Card className="m-3">
               <video style={{ objectFit: "fill", height: "100%" }} src={Video3} controls muted type="video/mp4" />
