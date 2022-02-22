@@ -15,7 +15,7 @@ import ScrollToTop from "./ScrollToTop";
 function App() {
   return (
     <>
-      <Router>
+      <Router >
         <ScrollToTop />
         <NavBar />
         <Routes>
@@ -25,7 +25,6 @@ function App() {
           <Route path="/realisations" element={<Realisations />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/commentaires" element={<Feedback />} />
-          <Route element={<NotFound />} />
         </Routes>
         <Footer />
       </Router>
