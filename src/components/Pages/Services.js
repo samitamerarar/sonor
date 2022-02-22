@@ -45,7 +45,7 @@ export const Services = () => {
     /* https://www.rapidtables.com/web/html/mailto.html */
     onSubmit: (e) => {
       const datesSelected = datesValue && datesValue.length > 0 ? datesValue : '';
-      window.open(`mailto:locationsonor@gmail.com?subject=Son'OR%20-%20R%C3%A9servation%20pour%20${encodeURIComponent(data.name)}
+      window.open(`mailto:locationsonore@gmail.com?subject=Son'OR%20-%20R%C3%A9servation%20pour%20${encodeURIComponent(data.name)}
       &body=${encodeURIComponent(data.message + "\n\nDates sélectionnées: " + datesSelected + "\nNuméro de téléphone entré: " + data.phone)}`
         , '_self')
     },
