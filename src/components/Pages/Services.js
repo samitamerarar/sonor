@@ -84,17 +84,17 @@ export const Services = () => {
             <div style={{ fontSize: "1.4em", fontWeight: "350" }}>
               <p style={{ lineHeight: "2" }} className="mb-4">
                 1. (2) Haut-Parleurs 12 po avec trépieds, (1) Micro avec fil, fillage, fils auxiliaires.<br />
-                ❤️ (Parfait pour Conférence, Cocktail dînatoire)
+                (Parfait pour Conférence, Cocktail dînatoire)
               </p>
 
               <p style={{ lineHeight: "2" }} className="mb-4">
                 2. (2) Haut-Parleurs 12 po avec trépieds, (1) Subwoofer 18 po, (1) Micro avec fil, fils auxiliaires.<br />
-                ❤️ (Parfait pour Fête de bureau, Événement résidentiel)
+                (Parfait pour Fête de bureau, Événement résidentiel)
               </p>
 
               <p style={{ lineHeight: "2" }} className="mb-5">
                 3. (2) Haut-Parleurs 12 po avec trépieds, (1) Subwoofer 18 po, (1) Console mixeur à 16 entrées, Micros sans fil, fillage, fils auxiliaires.<br />
-                ❤️ (Parfait pour Mariage, Fiancailles, Événement dans une salle louée)<br />
+                (Parfait pour Mariage, Fiancailles, Événement dans une salle louée)<br />
               </p>
 
               <p className="mb-5">Note: Tous les ensembles peuvent êtres modifiés pour y ajouter de l'éclairage et d'autres accessoires.</p>
@@ -113,14 +113,14 @@ export const Services = () => {
               <Row>
                 <p>Dates: </p>
                 <p>{/* https://www.npmjs.com/package/react-multi-date-picker */}
-                  <DatePicker style={{ padding: '8px', width: '100%' }} value={datesValue} onChange={setDatesValue} minDate={new Date()} months={months} weekDays={weekDays} />
+                  <DatePicker style={{ padding: '0.25em' }} value={datesValue} onChange={setDatesValue} minDate={new Date()} months={months} weekDays={weekDays} />
                 </p>
               </Row>
 
               <Row>
                 <p><span style={{ color: 'red' }}>*</span> Nom: </p>
                 <p>
-                  <input style={{ padding: '4px', borderRadius: '5px', borderWidth: '1px' }} value={data.name || ''} onChange={handleChange('name')} type="text" maxLength="40" size="30" required />
+                  <input style={{ padding: '0.3em', borderRadius: '5px', borderWidth: '1px' }} value={data.name || ''} onChange={handleChange('name')} type="text" maxLength="40" size="30" required />
                   {errors.name && <p className="error">{errors.name}</p>}
                 </p>
               </Row>
@@ -128,7 +128,7 @@ export const Services = () => {
               <Row>
                 <p>Numéro de téléphone: </p>
                 <p>
-                  <input style={{ padding: '4px', borderRadius: '5px', borderWidth: '1px' }} value={data.phone || ''} onChange={handleChange('phone')} type="text" maxLength="20" size="30" />
+                  <input style={{ padding: '0.3em', borderRadius: '5px', borderWidth: '1px' }} value={data.phone || ''} onChange={handleChange('phone')} type="text" maxLength="20" size="30" />
                   {errors.phone && <p className="error">{errors.phone}</p>}
                 </p>
               </Row>
@@ -137,7 +137,7 @@ export const Services = () => {
               <Row >
                 <p><span style={{ color: 'red' }}>*</span> Message: </p>
                 <p>
-                  <textarea style={{ width: '100%', padding: '5px', borderRadius: '5px', borderWidth: '1px' }} value={data.message || ''} onChange={handleChange('message')} rows="8" required />
+                  <textarea style={{ width: '100%', padding: '0.3em', borderRadius: '5px', borderWidth: '1px' }} value={data.message || ''} onChange={handleChange('message')} rows="8" required />
                   {errors.message && <p className="error">{errors.message}</p>}
                 </p>
               </Row>
