@@ -12,8 +12,7 @@ export const Footer = () => {
                         <p style={{ fontSize: "2em", fontWeight: "bold" }}>Contactez-nous</p>
                         <p>Courriel: <a style={{ fontWeight: "bold" }} href="mailto:locationsonore@gmail.com">locationsonore@gmail.com</a></p>
                         <p>Téléphone: <br />
-                            Montréal: <span style={{ fontWeight: "bold" }}>(514) 581-5460</span><br />
-                            Laval et les environs: <span style={{ fontWeight: "bold" }}>(514) 581-5460</span>
+                            Montréal, Laval et les environs: <br /><a style={{ fontWeight: "bold" }} href="tel:5145815460">(514) 581-5460</a><br />
                         </p>
                         <p style={{ fontSize: "1.2em" }}>
                             <a href="https://www.facebook.com/profile.php?id=100063594722987/" target="_blank" rel="noreferrer" className="m-2">

@@ -21,8 +21,7 @@ export const Contact = () => {
               <p> <span style={{ fontWeight: "400" }}>Lieu :</span> Montréal, Laval et les environs </p>
 
               <p><span style={{ fontWeight: "400" }}>Téléphone :</span><br />
-                Montréal: (514) 581-5460<br />
-                Laval et les environs: (514) 581-5460<br />
+                Montréal, Laval et les environs : <a href="tel:5145815460">(514) 581-5460</a>
               </p>
 
               <p><span style={{ fontWeight: "400" }}>Courriel :</span> <a href="mailto:locationsonore@gmail.com">locationsonore@gmail.com</a></p><br />
