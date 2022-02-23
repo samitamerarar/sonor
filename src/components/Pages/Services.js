@@ -113,14 +113,14 @@ export const Services = () => {
               <Row>
                 <p>Dates: </p>
                 <p>{/* https://www.npmjs.com/package/react-multi-date-picker */}
-                  <DatePicker value={datesValue} onChange={setDatesValue} minDate={new Date()} months={months} weekDays={weekDays} />
+                  <DatePicker style={{ padding: '8px', width: '100%' }} value={datesValue} onChange={setDatesValue} minDate={new Date()} months={months} weekDays={weekDays} />
                 </p>
               </Row>
 
               <Row>
                 <p><span style={{ color: 'red' }}>*</span> Nom: </p>
                 <p>
-                  <input value={data.name || ''} onChange={handleChange('name')} type="text" maxLength="40" size="30" required />
+                  <input style={{ padding: '4px', borderRadius: '5px', borderWidth: '1px' }} value={data.name || ''} onChange={handleChange('name')} type="text" maxLength="40" size="30" required />
                   {errors.name && <p className="error">{errors.name}</p>}
                 </p>
               </Row>
@@ -128,7 +128,7 @@ export const Services = () => {
               <Row>
                 <p>Numéro de téléphone: </p>
                 <p>
-                  <input value={data.phone || ''} onChange={handleChange('phone')} type="text" maxLength="20" size="30" />
+                  <input style={{ padding: '4px', borderRadius: '5px', borderWidth: '1px' }} value={data.phone || ''} onChange={handleChange('phone')} type="text" maxLength="20" size="30" />
                   {errors.phone && <p className="error">{errors.phone}</p>}
                 </p>
               </Row>
@@ -136,8 +136,8 @@ export const Services = () => {
 
               <Row >
                 <p><span style={{ color: 'red' }}>*</span> Message: </p>
-                <p >
-                  <textarea style={{ width: '100%' }} value={data.message || ''} onChange={handleChange('message')} rows="8" required />
+                <p>
+                  <textarea style={{ width: '100%', padding: '5px', borderRadius: '5px', borderWidth: '1px' }} value={data.message || ''} onChange={handleChange('message')} rows="8" required />
                   {errors.message && <p className="error">{errors.message}</p>}
                 </p>
               </Row>
