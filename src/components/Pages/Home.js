@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { Container, Row, Col } from "react-bootstrap";
-// import Video from '../../assets/home-video2.gif'
-import Video from '../../assets/home.mp4'
+import { Container, Row, Col, Image } from "react-bootstrap";
+import Video from '../../assets/homeOptimized.mp4'
+import HomeThumbnail from '../../assets/HomeThumbnail.jpg'
 import { HomeButton, LinkButton } from '../StyledComponents/HomeButton'
 import { HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight, ArrowDownward, ArrowDown } from '../StyledComponents/HomeElements'
 import * as Scroll from 'react-scroll';
@@ -19,6 +19,7 @@ export const Home = () => {
       <Row className="justify-content-md-center" style={{ backgroundColor: 'black', height: `calc(100vh)` }}>
         {/* <img src={Video} style={{ width: 'auto', height: `calc(100vh - 66px)`, filter: `opacity(75%) blur(1px)` }} /> */}
         <video style={{ objectFit: 'cover', height: '100%' }} autoPlay loop muted src={Video} type='video/mp4' />
+        <Image style={{ height: "100vh" }} src={HomeThumbnail} />
         <HeroContent>
           <HeroH1>Location Son'OR</HeroH1>
           <HeroP>Équipements de Sonorisation et Audiovisuel</HeroP>
