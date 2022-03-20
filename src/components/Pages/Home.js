@@ -16,10 +16,9 @@ export const Home = () => {
 
   return (
     <Container fluid className="mb-5 p-0">
-      <Row className="justify-content-md-center" style={{ backgroundColor: 'black', height: `calc(100vh)` }}>
+      <Row className="justify-content-md-center" style={{ backgroundImage: `url(${HomeThumbnail})`, backgroundSize: '200vh', backgroundColor: 'black', height: `calc(100vh)` }}>
         {/* <img src={Video} style={{ width: 'auto', height: `calc(100vh - 66px)`, filter: `opacity(75%) blur(1px)` }} /> */}
         <video style={{ objectFit: 'cover', height: '100%' }} autoPlay loop muted src={Video} type='video/mp4' />
-        <Image style={{ height: "100vh" }} src={HomeThumbnail} />
         <HeroContent>
           <HeroH1>Location Son'OR</HeroH1>
           <HeroP>Équipements de Sonorisation et Audiovisuel</HeroP>
