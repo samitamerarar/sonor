@@ -1,1 +1,2 @@
 # sonor
+npm run deploy
