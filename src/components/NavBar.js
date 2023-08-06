@@ -25,7 +25,7 @@ function NavBar() {
             </Nav>
             <Nav >
               <Nav.Link as={Link} to="/" onClick={() => setExpanded(false)}>Accueil</Nav.Link>
-              <Nav.Link as={Link} to="/covid19" onClick={() => setExpanded(false)}>Covid-19</Nav.Link>
+              {/* <Nav.Link as={Link} to="/covid19" onClick={() => setExpanded(false)}>Covid-19</Nav.Link> */}
               <Nav.Link as={Link} to="/services" onClick={() => setExpanded(false)}>Nos Services</Nav.Link>
               <Nav.Link as={Link} to="/realisations" onClick={() => setExpanded(false)}>Réalisations</Nav.Link>
               <Nav.Link as={Link} to="/contact" onClick={() => setExpanded(false)}>Contact</Nav.Link>

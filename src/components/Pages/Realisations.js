@@ -3,6 +3,9 @@ import { CardGroup, Card, Container, Row, Image } from "react-bootstrap";
 import Image1 from '../../assets/1.jpg'
 import Image2 from '../../assets/2.jpg'
 import Image3 from '../../assets/3.jpg'
+import Image4 from '../../assets/4.jpg'
+import Image5 from '../../assets/5.jpg'
+import Image6 from '../../assets/6.jpg'
 import TopImage from '../../assets/pexels-francesco-ungaro-6530797.jpg'
 import Video1 from '../../assets/1-nosound.mp4'
 import Video2 from '../../assets/2.mp4'
@@ -30,6 +33,18 @@ export const Realisations = () => {
           <h3>PHOTOS</h3>
         </Row>
         <Container className="mb-5">
+
+          <CardGroup >
+            <Card className="m-3">
+              <Card.Img style={{ height: "100%" }} src={Image4} />
+            </Card>
+            <Card className="m-3">
+              <Card.Img style={{ height: "100%" }} src={Image5} />
+            </Card>
+            <Card className="m-3">
+              <Card.Img style={{ height: "100%" }} src={Image6} />
+            </Card>
+          </CardGroup>
 
           <CardGroup >
             <Card className="m-3">
