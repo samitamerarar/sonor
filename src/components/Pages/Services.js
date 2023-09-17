@@ -5,6 +5,10 @@ import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import Image5 from '../../assets/pexels-francesco-ungaro-6530797.jpg'
 import { ScrollButton } from "./ScrollButton";
 
+import TimePicker from 'react-time-picker';
+import 'react-time-picker/dist/TimePicker.css';
+import 'react-clock/dist/Clock.css';
+
 const weekDays = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"]
 const months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]
 
@@ -45,8 +49,19 @@ export const Services = () => {
     /* https://www.rapidtables.com/web/html/mailto.html */
     onSubmit: (e) => {
       const datesSelected = datesValue && datesValue.length > 0 ? datesValue : '';
+      const heuresDebutSelected = heuresDebutValue ? heuresDebutValue : '';
+      const heuresFinSelected = heuresFinValue ? heuresFinValue : '';
+      console.log(data.message 
+        + "\n\nDates sélectionnées: " + datesSelected 
+        + "\nHeure de début de l’évènement: " + heuresDebutSelected
+        + "\nHeure de fin de l’évènement: " + heuresFinSelected
+        + "\nNuméro de téléphone entré: " + data.phone)
       window.open(`mailto:locationsonore@gmail.com?subject=Son'OR%20-%20R%C3%A9servation%20pour%20${encodeURIComponent(data.name)}
-      &body=${encodeURIComponent(data.message + "\n\nDates sélectionnées: " + datesSelected + "\nNuméro de téléphone entré: " + data.phone)}`
+      &body=${encodeURIComponent(data.message 
+        + "\n\nDates sélectionnées: " + datesSelected 
+        + "\nHeure de début-fin de l’évènement: " + heuresDebutSelected
+        + "\nHeure de fin de l’évènement: " + heuresFinSelected
+        + "\nNuméro de téléphone entré: " + data.phone)}`
         , '_self')
     },
     initialValues: {
@@ -56,6 +71,8 @@ export const Services = () => {
   })
 
   const [datesValue, setDatesValue] = useState([]);
+  const [heuresDebutValue, setHeuresDebutValue] = useState('');
+  const [heuresFinValue, setHeuresFinValue] = useState('');
 
   return (
     <>
@@ -116,6 +133,21 @@ export const Services = () => {
                   <DatePicker style={{ padding: '0.25em' }} value={datesValue} onChange={setDatesValue} minDate={new Date()} months={months} weekDays={weekDays} />
                 </p>
               </Row>
+              
+              <Row>
+                <Col md={3} >
+                <p>Heure de début de l'événement: </p>
+                <p>{/* https://www.npmjs.com/package/react-time-picker */}
+                <TimePicker onChange={setHeuresDebutValue} disableClock={true} value={heuresDebutValue} />
+                </p>
+                </Col>
+                <Col md={3} >
+                <p>Heure de fin de l'événement: </p>
+                <p>{/* https://www.npmjs.com/package/react-time-picker */}
+                <TimePicker onChange={setHeuresFinValue} disableClock={true} value={heuresFinValue} />
+                </p>
+                </Col>
+              </Row>
 
               <Row>
                 <p><span style={{ color: 'red' }}>*</span> Nom: </p>
@@ -146,6 +178,9 @@ export const Services = () => {
 
             </form>
 
+            <Row className="mt-3">
+              <p>Suite à l'envoi de votre courriel, notre équipe SON'OR vous répondra dans les plus brefs délais (24 à 48 heures).</p>
+            </Row>
           </Col>
         </Row>
 

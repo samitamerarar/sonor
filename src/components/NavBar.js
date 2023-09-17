@@ -9,7 +9,7 @@ function NavBar() {
 
   return (
     <>
-      <Navbar variant={"dark"} expand="lg" expanded={expanded} fixed style={{ backgroundColor: "#323438" }} fixed="top">
+      <Navbar variant={"dark"} expand="lg" expanded={expanded} style={{ backgroundColor: "#323438" }} fixed="top">
 
         <Container style={{ fontSize: "17px" }}>
           <Navbar.Brand href="/"><img
@@ -29,7 +29,7 @@ function NavBar() {
               <Nav.Link as={Link} to="/services" onClick={() => setExpanded(false)}>Nos Services</Nav.Link>
               <Nav.Link as={Link} to="/realisations" onClick={() => setExpanded(false)}>Réalisations</Nav.Link>
               <Nav.Link as={Link} to="/contact" onClick={() => setExpanded(false)}>Contact</Nav.Link>
-              <Nav.Link as={Link} to="/commentaires" onClick={() => setExpanded(false)}>Vos Commentaires</Nav.Link>
+              <Nav.Link as={Link} to="/faq" onClick={() => setExpanded(false)}>Questions/Réponses</Nav.Link>
             </Nav>
 
           </Navbar.Collapse>
