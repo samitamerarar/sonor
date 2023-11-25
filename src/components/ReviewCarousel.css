@@ -1,0 +1,30 @@
+.carousel {
+  /* background-color: #343a40;  */
+  /* height: 275px; */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  /* background-color: #c4ff23;  */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(1); /* Invert arrow color */
+}
+
+.carousel-item {
+  /* color: #ffffff; */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Adjust the width as needed */
+}
+
+.review-message {
+  max-width: 450px;
+  font-size: 1.1em;
+  text-align: center;
+  margin: 0 auto;
+}

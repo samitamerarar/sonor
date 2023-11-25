@@ -24,7 +24,7 @@
   }
 }
 
-#topimagerow{
+#topimagerow {
   --bs-gutter-x: 0px;
   width: calc(100vw);
   padding: 0px;
