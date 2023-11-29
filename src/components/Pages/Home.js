@@ -103,10 +103,10 @@ export const Home = () => {
             <div style={{ fontSize: "1.2em", fontWeight: "350", transform: `translateY(40px)` }}>
               <p>
                 La qualité sonore exceptionnelle que vous obtiendrez sera grâce à nos équipements de marques reconnues
-                tels que Electro‑Voice, Shure, Pioneer, Soundcraft, Beyerdynamic, etc.
+                telles que Electro‑Voice, Shure, Pioneer, Soundcraft, Beyerdynamic, etc.
               </p>
 
-              <p>Zones désservies: Montréal et tous les environs!</p>
+              <p>Zones desservies: Montréal et ses environs!</p>
             </div>
           </Col>
         </Row>

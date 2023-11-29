@@ -116,12 +116,12 @@ export const Services = () => {
           <Col md={12}>
             <p style={{ fontSize: "1.4em", fontWeight: "350" }}>
               <span style={{ fontWeight: "500" }}>Clientèle: </span>Particulier · Petite/Moyenne/Grande Entreprise ·
-              Vous êtes la bienvenue!
+              Vous êtes les bienvenus!
             </p>
 
             <p style={{ fontSize: "1.4em", fontWeight: "350" }}>
-              <span style={{ fontWeight: "500" }}>Événements: </span>Mariage, fiançailles, Conférence, Coktail
-              dînatoire, Fête de bureau, Événement résidentiel ou dans une salle louée et, bien plus encore!
+              <span style={{ fontWeight: "500" }}>Événements: </span>Mariage · fiançailles · Conférence · Coktail
+              dînatoire · Fête de bureau · Événement résidentiel ou dans une salle louée et bien plus encore!
             </p>
 
             <p style={{ fontSize: "1.4em", fontWeight: "350" }}>

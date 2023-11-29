@@ -38,7 +38,7 @@ export const Contact = () => {
             <p style={{ fontSize: "2em", fontWeight: "400" }}>RÉSERVATIONS</p>
 
             <p style={{ fontSize: "1.5em", fontWeight: "300" }}>
-              Pour toute réservation ou pour des informations concernant la location, veuillez nous contactez.
+              Pour toute réservation ou pour des informations concernant la location, veuillez nous contacter.
             </p>
           </Col>
         </Row>
