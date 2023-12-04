@@ -147,7 +147,8 @@ export const Services = () => {
                     (Parfait pour Conférence, Cocktail dînatoire)
                   </p>
                   <p>
-                    <strong>À partir de 200$</strong> - Installation comprise
+                    {/* <strong>À partir de 200$</strong> -  */}
+                    Installation comprise
                   </p>
                 </div>
 
@@ -159,7 +160,8 @@ export const Services = () => {
                     (Parfait pour Fête de bureau, Événement résidentiel)
                   </p>
                   <p>
-                    <strong>À partir de 250$</strong> - Installation comprise
+                    {/* <strong>À partir de 250$</strong> -  */}
+                    Installation comprise
                   </p>
                 </div>
 
@@ -172,7 +174,8 @@ export const Services = () => {
                     (Parfait pour une petite réception, Événement dans une salle louée)
                   </p>
                   <p>
-                    <strong>À partir de 280$</strong> - Installation comprise
+                    {/* <strong>À partir de 280$</strong> -  */}
+                    Installation comprise
                   </p>
                 </div>
 
