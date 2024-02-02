@@ -93,46 +93,19 @@ export const Realisations = () => {
 
           <CardGroup>
             <Card className="m-3">
-              <video style={{ objectFit: "fill", height: "100%" }} src={NewVideo1} controls muted type="video/mp4" />
+              <video style={{ objectFit: "fill", height: "848px" }} src={NewVideo1} controls muted type="video/mp4" />
             </Card>
             <Card className="m-3">
-              <video style={{ objectFit: "fill", height: "100%" }} src={NewVideo2} controls muted type="video/mp4" />
-            </Card>
-          </CardGroup>
-
-          <CardGroup>
-            <Card className="m-3">
-              <video style={{ objectFit: "fill", height: "100%" }} src={Video1} controls muted type="video/mp4" />
-            </Card>
-            <Card className="m-3">
-              <video style={{ objectFit: "fill", height: "100%" }} src={Video2} controls muted type="video/mp4" />
+              <video style={{ objectFit: "fill", height: "848px" }} src={NewVideo2} controls muted type="video/mp4" />
             </Card>
           </CardGroup>
 
           <CardGroup>
             <Card className="m-3">
-              <video style={{ objectFit: "fill", height: "100%" }} src={Video3} controls muted type="video/mp4" />
+              <video style={{ objectFit: "fill", height: "848px" }} src={Video1} controls muted type="video/mp4" />
             </Card>
             <Card className="m-3">
-              <video style={{ objectFit: "fill", height: "100%" }} src={Video4} controls muted type="video/mp4" />
-            </Card>
-          </CardGroup>
-
-          <CardGroup>
-            <Card className="m-3">
-              <video style={{ objectFit: "fill", height: "100%" }} src={Video5} controls muted type="video/mp4" />
-            </Card>
-            <Card className="m-3">
-              <video style={{ objectFit: "fill", height: "100%" }} src={Video6} controls muted type="video/mp4" />
-            </Card>
-          </CardGroup>
-
-          <CardGroup>
-            <Card className="m-3">
-              <video style={{ objectFit: "fill", height: "100%" }} src={Video7} controls muted type="video/mp4" />
-            </Card>
-            <Card className="m-3">
-              <video style={{ objectFit: "fill", height: "100%" }} src={Video9} controls muted type="video/mp4" />
+              <video style={{ objectFit: "fill", height: "848px" }} src={Video9} controls muted type="video/mp4" />
             </Card>
           </CardGroup>
         </Container>
